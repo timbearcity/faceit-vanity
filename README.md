@@ -5,4 +5,3 @@ Google Chrome extension for faceit.com
 ## License
 
 TBA
-Hello
