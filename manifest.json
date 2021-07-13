@@ -1,0 +1,31 @@
+{
+    "name": "FACEIT Vanity",
+    "description": "Extend the functionality on faceit.com",
+    "version": "1.0",
+    "manifest_version": 3,
+    "options_page": "options.html",
+    "permissions": ["activeTab"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "",
+            "32": "",
+            "48": "",
+            "128": ""
+        }
+    },
+    "icons": {
+        "16": "",
+        "32": "",
+        "48": "",
+        "128": ""
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.faceit.com/*/csgo/room/*"],
+            "run_at": "document_idle",
+            "css": ["custom.css"],
+            "js": ["content_script.js"]
+        }
+    ]
+}
